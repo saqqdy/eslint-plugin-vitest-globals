@@ -1,0 +1,32 @@
+{
+    "name": "eslint-plugin-vitest-globals",
+    "version": "1.0.0",
+    "description": "A extends of vitest globals for eslint",
+    "main": "index.js",
+    "scripts": {
+        "prettier": "prettier --write \"**/*.{js,ts,sh,json,md}\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/saqqdy/eslint-plugin-vitest-globals.git"
+    },
+    "keywords": [
+        "vitest",
+        "vitest globals",
+        "eslint-plugin-vitest-globals",
+        "eslint-plugin",
+        "eslint",
+        "eslint-extends"
+    ],
+    "author": "saqqdy<https://github.com/saqqdy>",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.17.5",
+        "@saqqdy/prettier-config": "^1.1.1",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^7.12.1",
+        "prettier": "^2.5.1"
+    },
+    "dependencies": {}
+}
