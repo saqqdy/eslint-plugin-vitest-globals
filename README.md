@@ -27,14 +27,32 @@ pnpm i -D eslint-plugin-vitest-globals
 
 ## Usage
 
-Simply include eslint-plugin-vitest-globals into your eslint configuration file:
+1. Simply include eslint-plugin-vitest-globals into your eslint configuration file:
 
 ```json
 {
-    "extends": ["vitest-globals"]
+    "extends": ["plugin:vitest-globals/recommended"],
+    "env": {
+        "vitest-globals/env": true
+    }
 }
 ```
 
+2. or if you want to use it in override mode:
+
+```json
+{
+    "extends": ["plugin:vitest-globals/recommended"],
+    "overrides": [
+        {
+            "files": ["**/__tests__/*.{j,t}s?(x)", "**/*.spec.{j,t}s?(x)"],
+            "env": {
+                "vitest-globals/env": true
+            }
+        }
+    ]
+}
+```
 
 [npm-image]: https://img.shields.io/npm/v/eslint-plugin-vitest-globals.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/eslint-plugin-vitest-globals
