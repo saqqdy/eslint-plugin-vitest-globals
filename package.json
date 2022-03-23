@@ -1,6 +1,6 @@
 {
     "name": "eslint-plugin-vitest-globals",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "A extends of vitest globals for eslint",
     "main": "index.js",
     "scripts": {
