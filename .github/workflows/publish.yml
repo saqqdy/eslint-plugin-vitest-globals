@@ -37,14 +37,14 @@ jobs:
       #   env:
       #     NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - run: pnpm run prettier
+      - run: pnpm run dist
         env:
           NODE_OPTIONS: --max-old-space-size=6144
 
       - name: Gen .npmrc
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ./.npmrc
 
-      - run: npm run publish --registry https://registry.npmjs.org
+      - run: pnpm pub
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
