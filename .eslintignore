@@ -1,0 +1,7 @@
+/lib
+/es
+coverage
+*.bak
+*.bak.js
+*_bak
+pnpm-lock.yaml

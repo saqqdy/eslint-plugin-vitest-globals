@@ -1,4 +1,4 @@
 module.exports = {
-    extends: require.resolve('./base'),
-    globals: {}
+	extends: require.resolve('./base'),
+	globals: {}
 }
