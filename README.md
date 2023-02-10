@@ -31,10 +31,10 @@ pnpm i -D eslint-plugin-vitest-globals
 
 ```json
 {
-    "extends": ["plugin:vitest-globals/recommended"],
-    "env": {
-        "vitest-globals/env": true
-    }
+  "extends": ["plugin:vitest-globals/recommended"],
+  "env": {
+    "vitest-globals/env": true
+  }
 }
 ```
 
@@ -42,15 +42,15 @@ pnpm i -D eslint-plugin-vitest-globals
 
 ```json
 {
-    "extends": ["plugin:vitest-globals/recommended"],
-    "overrides": [
-        {
-            "files": ["**/__tests__/*.{j,t}s?(x)", "**/*.spec.{j,t}s?(x)"],
-            "env": {
-                "vitest-globals/env": true
-            }
-        }
-    ]
+  "extends": ["plugin:vitest-globals/recommended"],
+  "overrides": [
+    {
+      "files": ["**/__tests__/*.{j,t}s?(x)", "**/*.spec.{j,t}s?(x)"],
+      "env": {
+        "vitest-globals/env": true
+      }
+    }
+  ]
 }
 ```
 

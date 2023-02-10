@@ -9,8 +9,8 @@ const REGISTRY_URL = 'https://registry.npmjs.org'
 const command = `npm --registry=${REGISTRY_URL} unpublish`
 
 for (const version of versions) {
-    execSync(`${command} eslint-plugin-vitest-globals@${version}`, {
-        stdio: 'inherit'
-    })
-    console.info(`UnPublished eslint-plugin-vitest-globals@${version}`)
+	execSync(`${command} eslint-plugin-vitest-globals@${version}`, {
+		stdio: 'inherit'
+	})
+	console.info(`UnPublished eslint-plugin-vitest-globals@${version}`)
 }

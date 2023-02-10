@@ -1,9 +1,12 @@
 {
 	"name": "eslint-plugin-vitest-globals",
 	"description": "A extends of vitest globals for eslint",
-	"version": "1.2.0",
-	"packageManager": "pnpm@7.7.0",
-	"main": "index.js",
+	"version": "1.3.0",
+	"packageManager": "pnpm@7.26.1",
+	"main": "./index.js",
+	"files": [
+		"index.js"
+	],
 	"scripts": {
 		"pub": "tscjs scripts/publish",
 		"unpub": "tscjs scripts/unpublish",
@@ -12,18 +15,27 @@
 		"prettier": "prettier --write \"**/*.{js,ts,sh,json,md}\"",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"dependencies": {
-		"eslint-config-sets": "^1.8.3"
-	},
 	"devDependencies": {
-		"@babel/core": "^7.18.13",
-		"@eslint-sets/eslint-config-simple-ts": "^3.0.4",
-		"@types/node": "^18.7.13",
-		"eslint": "^8.23.0",
-		"prettier": "^2.7.1",
-		"prettier-config-common": "^1.2.1",
+		"@babel/core": "^7.20.12",
+		"@eslint-sets/eslint-config-ts": "^4.3.1",
+		"@types/node": "^18.13.0",
+		"eslint": "^8.33.0",
+		"prettier": "^2.8.4",
+		"prettier-config-common": "^1.4.0",
+		"reinstaller": "^2.3.0",
 		"tsnd": "^1.1.0",
-		"typescript": "^4.8.2"
+		"typescript": "^4.9.5"
+	},
+	"pnpm": {
+		"peerDependencyRules": {
+			"ignoreMissing": [
+				"tslib",
+				"webpack"
+			],
+			"allowedVersions": {
+				"eslint": "^8.0.0"
+			}
+		}
 	},
 	"keywords": [
 		"vitest",
@@ -36,19 +48,16 @@
 	],
 	"license": "MIT",
 	"author": "saqqdy <https://github.com/saqqdy>",
+	"homepage": "https://github.com/saqqdy/eslint-plugin-vitest-globals#readme",
+	"bugs": {
+		"url": "https://github.com/saqqdy/eslint-plugin-vitest-globals/issues"
+	},
 	"repository": {
 		"type": "git",
 		"url": "http://github.com/saqqdy/eslint-plugin-vitest-globals.git"
 	},
-	"pnpm": {
-		"peerDependencyRules": {
-			"ignoreMissing": [
-				"tslib",
-				"webpack"
-			],
-			"allowedVersions": {
-				"eslint": "^8.0.0"
-			}
-		}
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org",
+		"access": "public"
 	}
 }

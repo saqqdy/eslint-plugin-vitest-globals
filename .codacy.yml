@@ -2,26 +2,26 @@
 engines:
   rubocop:
     exclude_paths:
-      - "config/test.yml"
-    base_sub_dir: "test/baseDir"
+      - 'config/test.yml'
+    base_sub_dir: 'test/baseDir'
   duplication:
     exclude_paths:
-      - "config/test.yml"
+      - 'config/test.yml'
     config:
       languages:
-        - "ruby"
+        - 'ruby'
 languages:
   css:
     extensions:
-      - "-css.resource"
+      - '-css.resource'
 exclude_paths:
-  - "*.md"
-  - "*.js"
-  - "spec/**/*"
-  - "benchmarks/**/*"
-  - "**.min.js"
-  - "**/tests/**"
-  - "docs/**"
-  - "lib/**"
-  - "es/**"
-  - "script/**"
+  - '*.md'
+  - '*.js'
+  - 'spec/**/*'
+  - 'benchmarks/**/*'
+  - '**.min.js'
+  - '**/tests/**'
+  - 'docs/**'
+  - 'lib/**'
+  - 'es/**'
+  - 'scripts/**'

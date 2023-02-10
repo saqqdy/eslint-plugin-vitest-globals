@@ -1,4 +1,4 @@
-name: Npm publish
+name: npm-publish
 
 on:
   release:
@@ -21,7 +21,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 7.7.0
+          version: 7.26.1
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
