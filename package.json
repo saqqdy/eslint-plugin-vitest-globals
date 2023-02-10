@@ -12,6 +12,7 @@
 		"unpub": "tscjs scripts/unpublish",
 		"sync": "tscjs scripts/sync",
 		"dist": "pnpm run prettier",
+		"eslint": "eslint --fix .",
 		"prettier": "prettier --write \"**/*.{js,ts,sh,json,md}\"",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
