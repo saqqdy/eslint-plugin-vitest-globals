@@ -19,7 +19,7 @@
 	},
 	"devDependencies": {
 		"@babel/core": "^7.20.12",
-		"@eslint-sets/eslint-config-ts": "^4.3.1",
+		"@eslint-sets/eslint-config-ts": "^5.0.0",
 		"@types/node": "^18.13.0",
 		"eslint": "^8.33.0",
 		"prettier": "^2.8.4",
