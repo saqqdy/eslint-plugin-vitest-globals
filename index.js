@@ -1,5 +1,8 @@
 'use strict'
 
+/**
+ * @see https://github.com/vitest-dev/vitest/blob/main/packages/vitest/src/constants.ts
+ */
 module.exports = {
 	rules: {},
 	configs: {
