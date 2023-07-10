@@ -9,3 +9,10 @@ updates:
     directory: / # Location of package manifests
     schedule:
       interval: weekly
+    open-pull-requests-limit: 2
+    ignore:
+      - dependency-name: 'aws*'
+      - dependency-name: typescript
+        versions: [4.x]
+      - dependency-name: '*'
+        update-types: ['version-update:semver-minor']
