@@ -53,6 +53,14 @@ npm install -D eslint-plugin-vitest-globals
 }
 ```
 
+## Support & Issues
+
+Please open an issue [here](https://github.com/saqqdy/eslint-plugin-vitest-globals/issues).
+
+## License
+
+[MIT](LICENSE)
+
 [npm-image]: https://img.shields.io/npm/v/eslint-plugin-vitest-globals.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/eslint-plugin-vitest-globals
 [codacy-image]: https://app.codacy.com/project/badge/Grade/f70d4880e4ad4f40aa970eb9ee9d0696
