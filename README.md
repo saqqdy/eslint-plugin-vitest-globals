@@ -16,13 +16,12 @@ A extends of vitest globals for eslint
 
 ## Installation
 
-```shell
-# by npm
-npm install -D eslint-plugin-vitest-globals
-# by yarn
-yarn add -D eslint-plugin-vitest-globals
+```bash
 # by pnpm
 pnpm i -D eslint-plugin-vitest-globals
+
+# by npm
+npm install -D eslint-plugin-vitest-globals
 ```
 
 ## Usage
