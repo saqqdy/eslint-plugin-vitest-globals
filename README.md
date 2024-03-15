@@ -12,6 +12,12 @@ A extends of vitest globals for eslint
 
 [![Sonar][sonar-image]][sonar-url]
 
+<div style="text-align: center; margin-bottom: 20px;" align="center">
+
+### **[Change Log](./CHANGELOG.md)**
+
+</div>
+
 </div>
 
 ## Installation

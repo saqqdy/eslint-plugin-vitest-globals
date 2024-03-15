@@ -31,7 +31,9 @@ module.exports = {
 				beforeAll: true,
 				afterAll: true,
 				beforeEach: true,
-				afterEach: true
+				afterEach: true,
+				onTestFinished: true,
+				onTestFailed: true
 			}
 		}
 	}
