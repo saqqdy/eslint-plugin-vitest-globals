@@ -1,12 +1,21 @@
 {
 	"name": "eslint-plugin-vitest-globals",
-	"description": "A extends of vitest globals for eslint",
+	"description": "ESLint plugin for Vitest globals",
 	"version": "1.5.0",
 	"packageManager": "pnpm@8.6.7",
 	"main": "./index.js",
+	"types": "./index.d.ts",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"require": "./index.js",
+			"default": "./index.js"
+		}
+	},
 	"files": [
 		"configs",
-		"index.js"
+		"index.js",
+		"index.d.ts"
 	],
 	"scripts": {
 		"pub": "tscjs scripts/publish",
@@ -15,7 +24,8 @@
 		"dist": "pnpm run prettier",
 		"eslint": "eslint --fix .",
 		"prettier": "prettier --write \"**/*.{js,ts,sh,json,md}\"",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "vitest run",
+		"test:watch": "vitest"
 	},
 	"devDependencies": {
 		"@eslint-sets/eslint-config-ts": "^5.12.0",
@@ -25,7 +35,11 @@
 		"prettier-config-common": "^1.4.0",
 		"reinstaller": "^3.0.2",
 		"tsnd": "^1.1.0",
-		"typescript": "^5.4.2"
+		"typescript": "^5.4.2",
+		"vitest": "^1.6.0"
+	},
+	"engines": {
+		"node": ">=16"
 	},
 	"pnpm": {
 		"peerDependencyRules": {

@@ -1,0 +1,21 @@
+# Source files
+scripts/
+test/
+.github/
+
+# Config files
+.eslintrc.js
+.prettierrc.js
+vitest.config.js
+.markdownlint.json
+
+# Development
+.vscode/
+node_modules/
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+CHANGELOG.md
