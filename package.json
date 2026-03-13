@@ -17,6 +17,7 @@
 		"index.js",
 		"index.d.ts"
 	],
+	"sideEffects": false,
 	"scripts": {
 		"pub": "tscjs scripts/publish",
 		"unpub": "tscjs scripts/unpublish",
@@ -28,15 +29,15 @@
 		"test:watch": "vitest"
 	},
 	"devDependencies": {
-		"@eslint-sets/eslint-config-ts": "^5.12.0",
-		"@types/node": "^20.11.27",
+		"@eslint-sets/eslint-config-ts": "^5.14.0",
+		"@types/node": "^22.12.0",
 		"eslint": "^8.57.0",
-		"prettier": "^3.2.5",
+		"prettier": "^3.5.0",
 		"prettier-config-common": "^1.4.0",
 		"reinstaller": "^3.0.2",
 		"tsnd": "^1.1.0",
-		"typescript": "^5.4.2",
-		"vitest": "^1.6.1"
+		"typescript": "^5.9.0",
+		"vitest": "^3.2.4"
 	},
 	"engines": {
 		"node": ">=16"
@@ -62,24 +63,34 @@
 	},
 	"keywords": [
 		"vitest",
-		"vitest env",
-		"vitest globals",
-		"vitest eslint",
-		"eslint-plugin-vitest-globals",
+		"vitest-globals",
+		"vitest-env",
+		"vitest-eslint",
 		"eslint-plugin",
+		"eslint-plugin-vitest",
+		"eslint-plugin-vitest-globals",
 		"eslint",
+		"eslint-config",
 		"eslint-extends",
+		"flat-config",
+		"testing",
+		"unit-test",
+		"benchmark",
 		"saqqdy"
 	],
 	"license": "MIT",
 	"author": "saqqdy <https://github.com/saqqdy>",
+	"funding": {
+		"type": "github",
+		"url": "https://github.com/sponsors/saqqdy"
+	},
 	"homepage": "https://github.com/saqqdy/eslint-plugin-vitest-globals#readme",
 	"bugs": {
 		"url": "https://github.com/saqqdy/eslint-plugin-vitest-globals/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "http://github.com/saqqdy/eslint-plugin-vitest-globals.git"
+		"url": "git+https://github.com/saqqdy/eslint-plugin-vitest-globals.git"
 	},
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org",
