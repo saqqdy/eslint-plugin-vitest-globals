@@ -36,7 +36,7 @@
 		"reinstaller": "^3.0.2",
 		"tsnd": "^1.1.0",
 		"typescript": "^5.4.2",
-		"vitest": "^1.6.0"
+		"vitest": "^1.6.1"
 	},
 	"engines": {
 		"node": ">=16"
@@ -50,6 +50,14 @@
 			"allowedVersions": {
 				"eslint": "^8.0.0"
 			}
+		},
+		"overrides": {
+			"@babel/traverse": ">=7.23.2",
+			"yaml": ">=2.2.2",
+			"braces": ">=3.0.3",
+			"minimatch": ">=9.0.7",
+			"esbuild": ">=0.25.0",
+			"ajv": ">=6.14.0"
 		}
 	},
 	"keywords": [
