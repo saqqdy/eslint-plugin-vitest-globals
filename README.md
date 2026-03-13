@@ -40,7 +40,6 @@ yarn add -D eslint-plugin-vitest-globals
 #### Option 1: Apply to all files
 
 ```json
-// .eslintrc.json
 {
   "extends": ["plugin:vitest-globals/recommended"]
 }
@@ -49,7 +48,6 @@ yarn add -D eslint-plugin-vitest-globals
 #### Option 2: Apply only to test files (Recommended)
 
 ```json
-// .eslintrc.json
 {
   "overrides": [
     {
@@ -69,7 +67,6 @@ yarn add -D eslint-plugin-vitest-globals
 If you only need the globals without the base config:
 
 ```json
-// .eslintrc.json
 {
   "plugins": ["vitest-globals"],
   "env": {
@@ -81,7 +78,6 @@ If you only need the globals without the base config:
 #### Option 4: With overrides and environment
 
 ```json
-// .eslintrc.json
 {
   "overrides": [
     {
@@ -248,7 +244,7 @@ This plugin includes TypeScript type definitions. No additional `@types` package
 
 ```typescript
 // example.test.ts
-import { describe, it, expect } from 'vitest'
+// No imports needed - globals are automatically available
 
 describe('TypeScript test', () => {
   it('should work with types', () => {
@@ -257,12 +253,26 @@ describe('TypeScript test', () => {
 })
 ```
 
+## Vitest Configuration
+
+To enable Vitest globals, add `globals: true` to your Vitest config:
+
+```javascript
+// vitest.config.js
+import { defineConfig } from 'vitest/config'
+
+export default defineConfig({
+  test: {
+    globals: true
+  }
+})
+```
+
 ## Example with Prettier
 
 This plugin works seamlessly with Prettier:
 
 ```json
-// .eslintrc.json
 {
   "extends": [
     "plugin:vitest-globals/recommended",
