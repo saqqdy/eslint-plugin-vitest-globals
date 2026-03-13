@@ -1,5 +1,27 @@
 # Change logs
 
+## 2026.03.13 v1.6.0
+
+### Features
+
+- Add ESLint 9+ Flat Config support (`flat/recommended`, `flat/base` configs)
+- Add TypeScript type definitions (`index.d.ts`)
+- Add new Vitest globals: `bench`, `benchmark`, `xtest`, `xit`, `xdescribe`
+
+### Improvements
+
+- Add unit tests with vitest (14 test cases)
+- Add GitHub Actions CI/CD workflow
+- Add `.npmignore` for cleaner package publishing
+- Improve `package.json`: add `exports` field, `types`, `engines`
+- Improve publish scripts with better error handling
+- Update README with detailed usage examples for all config types
+- Fix ESM export compatibility for ESLint v9
+
+### Security
+
+- Fix all security vulnerabilities in dev dependencies via pnpm overrides
+
 ## 2024.03.15 v1.5.0
 
 1. new global properties `onTestFinished` `onTestFailed`
