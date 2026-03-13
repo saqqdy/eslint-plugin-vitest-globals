@@ -1,5 +1,9 @@
 # Change logs
 
+## 2026.03.13 v1.6.1
+
+- docs work
+
 ## 2026.03.13 v1.6.0
 
 ### Features
